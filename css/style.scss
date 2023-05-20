@@ -5,7 +5,8 @@ $pb: (
 );
 @mixin query($screen) {
   @each $key, $value in $pb {
-    @if ($screen == $key) {
+    @if ($screen == $key) { 
+      
       @media (max-width: $value) {
         @content;
       }
@@ -41,7 +42,7 @@ $pb: (
   grid-template-areas: a a a a a a a a a a a a;
   width: 100%;
   padding: 2%;
-  border: 2px solid green;
+  border: 2px solid rgb(9, 38, 9);
   .logo {
     grid-column: a;
     a img {
