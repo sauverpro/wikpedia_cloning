@@ -1,0 +1,51 @@
+$pb: (
+  mobile: 480px,
+  tablet: 780px,
+  desktop: 1440px,
+);
+@mixin query($screen) {
+  @each $key, $value in $pb {
+    @if ($screen == $key) {
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  body {
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 0 3% 0 3%;
+  }
+}
+[class^="box-"] {
+  display: grid;
+  // place-items:center;
+  border: 2px solid red;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+}
+.box-header {
+  grid-template-columns: auto 1fr auto;
+}
+.head {
+  grid-template-areas: a a a a a a a a a a a a;
+  width: 100%;
+  padding: 2%;
+  border: 2px solid green;
+  .logo {
+    grid-column: a;
+    a img {
+      width: 20%;
+    }
+  }
+}
