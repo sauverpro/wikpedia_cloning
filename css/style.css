@@ -150,7 +150,6 @@
 }
 .main .about-section .text-about {
   width: 67%;
-  border: 1px solid #df1d6b;
   padding: 4px;
   height: 300px;
 }
@@ -161,7 +160,6 @@
   line-height: 2;
 }
 .main .about-section .protect {
-  border: 1px solid #df1d6b;
   width: 27%;
 }
 .main .about-section .protect button {
