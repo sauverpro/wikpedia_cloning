@@ -19,7 +19,7 @@ $c_gray: #6e768e;
     display: flex;
     justify-content: space-between;
     background: $white;
-    padding: 10px 10%;
+    padding: 1% 10% 1% 10%;
     align-items: center;
     border-radius: 5px;
     width: 100%;
@@ -97,7 +97,7 @@ $c_gray: #6e768e;
       display: flex;
       margin-top: 1%;
       justify-content: space-between;
-      padding: 10px 10%;
+      padding: 0 10% 0 10%;
       align-items: center;
       border-radius: 5px;
       width: 100%;
@@ -107,55 +107,95 @@ $c_gray: #6e768e;
         padding: 6px;
         // border:1px solid #0d33a7;
         color: #343a40;
-        &:hover{
-        background: rgb(215, 236, 236);
-        color:blue;
-          
+        &:hover {
+          background: rgb(215, 236, 236);
+          color: blue;
         }
       }
     }
   }
   // end of menus design
+  // background design
   .background {
+    // border: 1px solid #df1d6b;
     display: flex;
+    background: #343a40;
     margin-top: 3%;
     width: 100%;
+    height: 450px;
     .bg-image {
-      display: flex;
       position: relative;
-      width: fit-content;
+      width: 100%;
       a {
-        width: 100%;
+        
         img {
+          width: fit-content;
           width: 100%;
-          height: 60%;
+          height: 450px;
         }
       }
     }
     .link {
-      width: 80%;// border: 2px solid #df1d6b;
+      width: 80%; // border: 2px solid #df1d6b;
       position: absolute;
       margin-top: 5.5%;
       margin-left: 11.7%;
-      
-      .another{
+
+      .another {
         // max-width: 38%;
-      height: 40%;
-      max-width: 480px;
-      background: #f6c608;
-      padding: 1.3%;
-      a{
-        text-decoration: none;
-        font-size: 24px;
-        padding: 3%;
-        color: #000000;
-        letter-spacing: 1.5px;
-      &:hover{
-        text-decoration: underline;
+        max-width: 460px;
+        background: #f6c608;
+        padding: 1.3%;
+        a {
+          text-decoration: none;
+          font-size: 24px;
+          padding: 3%;
+          color: #000000;
+          line-height: 1.6;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
-      }
-      }
-      
     }
   }
+  // end of background design
+  .about-section{
+    display: flex;
+    padding: 5% 10% 3% 10%;
+    width: 100%;
+    max-height: 500px;
+    justify-content: space-between;
+    .text-about{
+      width: 67%;
+      border:1px solid #df1d6b;
+      padding: 4px;
+      height: 300px;
+      p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-family: arial;
+        line-height: 2;
+      }
+    }
+    .protect{
+      border: 1px solid #df1d6b;
+      width: 27%;
+      button{
+        margin-top: 8px;
+        background-color: #3a25ff;
+        border: none;
+        padding: 7px;
+        border-radius: 2px;
+        color:#ffffff;
+        font-size: 17px;
+      }
+      p{
+        margin-top: 3px;
+        font-size: smaller;
+        color: #343a40;
+      }
+    }
+  }
+
 }
