@@ -82,7 +82,11 @@
   border-radius: 2px;
   outline: none;
   border: none;
-  background: #df1d6b;
+  background: #e42672;
+}
+.main .top-nav .sett .user button:hover {
+  text-decoration: underline;
+  background-color: #ad1954;
 }
 .main .main-cont .menus {
   display: flex;
@@ -96,7 +100,7 @@
 .main .main-cont .menus a {
   text-decoration: none;
   font-size: small;
-  padding: 6px;
+  padding: 9px;
   color: #343a40;
 }
 .main .main-cont .menus a:hover {
@@ -145,13 +149,13 @@
   display: flex;
   padding: 5% 10% 3% 10%;
   width: 100%;
-  max-height: 500px;
-  justify-content: space-between;
+  max-height: 450px;
+  gap: 5px;
 }
 .main .about-section .text-about {
   width: 67%;
   padding: 4px;
-  height: 300px;
+  height: 250px;
 }
 .main .about-section .text-about p {
   font-size: 16px;
@@ -164,6 +168,7 @@
 }
 .main .about-section .protect button {
   margin-top: 8px;
+  cursor: pointer;
   background-color: #3a25ff;
   border: none;
   padding: 7px;
@@ -171,8 +176,44 @@
   color: #ffffff;
   font-size: 17px;
 }
+.main .about-section .protect button:hover {
+  text-decoration: underline;
+  background-color: #2819b0;
+}
 .main .about-section .protect p {
   margin-top: 3px;
   font-size: smaller;
   color: #343a40;
+}
+.main .laguages {
+  display: flex;
+  padding: 1% 10% 0% 10%;
+  justify-content: center;
+}
+.main .laguages .list-language {
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+}
+.main .laguages .list-language a {
+  text-decoration: none;
+  color: #3a25ff;
+  margin-right: 2%;
+}
+.main .laguages .list-language a:hover {
+  text-decoration: underline;
+}
+.main .numbers {
+  display: flex;
+  margin-bottom: 2.3rem;
+  align-items: normal;
+  box-sizing: border-box;
+  padding: 5% 10% 2% 10%;
+}
+.main .numbers .number {
+  padding: 2%;
+  flex-grow: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }/*# sourceMappingURL=style.css.map */
